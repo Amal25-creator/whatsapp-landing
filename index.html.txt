@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chat with Sales on WhatsApp</title>
+<meta name="description" content="Start a WhatsApp chat with our sales team for pricing, specs, and quick help." />
+<meta property="og:title" content="Chat with Sales on WhatsApp" />
+<meta property="og:description" content="Fast, direct, and official support—tap to start a WhatsApp chat now." />
+<meta property="og:type" content="website" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💬</text></svg>">
+<style>
+:root{--bg:#0f172a;--card:#0b1220;--text:#e5e7eb;--muted:#9ca3af;--brand:#22c55e;--brand-hover:#16a34a}
+html,body{height:100%}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:linear-gradient(180deg,var(--bg),#111827);color:var(--text);}
+.container{max-width:940px;margin:auto;padding:24px}
+.card{background:linear-gradient(180deg,var(--card),rgba(11,18,32,.6));border:1px solid rgba(255,255,255,.06);backdrop-filter:blur(6px);border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.35);padding:28px}
+header{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.logo{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.06);}
+.badge{font-size:12px;color:var(--muted)}
+h1{font-size:clamp(22px,4.2vw,36px);margin:10px 0 8px}
+p.lead{font-size:clamp(14px,2.4vw,18px);color:#cbd5e1;margin:0 0 16px;line-height:1.7}
+.benefits{display:grid;grid-template-columns:1fr;gap:10px;margin:18px 0}
+.benefit{display:flex;gap:10px;align-items:flex-start}
+.benefit .icon{width:28px;height:28px;border-radius:8px;background:rgba(34,197,94,.15);display:grid;place-items:center;flex:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{appearance:none;border:none;border-radius:12px;padding:14px 18px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+.btn-primary{background:var(--brand);color:#052e16}
+.btn-primary:hover{background:var(--brand-hover)}
+.btn-secondary{background:transparent;color:var(--text);border:1px solid rgba(229,231,235,.2)}
+.mini{font-size:12px;color:var(--muted);margin-top:10px}
+footer{margin-top:22px;border-top:1px dashed rgba(255,255,255,.08);padding-top:16px;color:var(--muted);font-size:12px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:center}
+.mock{aspect-ratio:4/3;border-radius:20px;background:linear-gradient(160deg,rgba(34,197,94,.2),rgba(59,130,246,.15));border:1px solid rgba(255,255,255,.08);display:grid;place-items:center;color:#e2e8f0}
+.mock span{opacity:.9}
+@media (max-width:840px){.hero{grid-template-columns:1fr}.mock{order:-1}}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<header>
+<div class="logo">💼</div>
+<div>
+<div class="badge">We’re here to help</div>
+<strong>Your Company Name</strong>
+</div>
+</header>
+
+
+<div class="hero">
+<div>
+<h1>Need a fast reply? Chat with our sales team on WhatsApp</h1>
+<p class="lead">Tap the button to start a direct chat. We’ll reply within minutes with pricing, specifications, and any details you need.</p>
+
+
+<div class="benefits">
+<div class="benefit"><div class="icon">⚡</div><div>Instant, direct response — no forms, no waiting.</div></div>
+<div class="benefit"><div class="icon">📦</div><div>Get product details, pricing, and shipping in one place.</div></div>
+<div class="benefit"><div class="icon">🛡️</div><div>Official, secure chat with our team.</div></div>
+</div>
+
+
+<div class="cta">
+<!-- TODO: Replace the WhatsApp number below with your full international number (no leading zeros) -->
+<a class="btn btn-primary" id="whatsappBtn"
+href="https://wa.me/201234567890?text=Hi%20team%2C%20I%20came%20from%20LinkedIn%20and%20I%27m%20interested%20to%20learn%20more%20about%20your%20offer.%20Please%20assist.%20Thank%20you!"
+target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+
+
+<a class="btn btn-secondary" href="#more">Learn more</a>
+</div>
+
+
+<div class="mini">Clicking the button opens WhatsApp with a pre-filled message including the source (LinkedIn).</div>
+</div>
+<div class="mock"><span>Drop your logo / product image here</span></div>
+</div>
+
+
+<footer>
+© <span id="year"></span> Your Company Name. All rights reserved.
+</footer>
+</div>
+</div>
+
+
+<script>
+// Auto-update year
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
